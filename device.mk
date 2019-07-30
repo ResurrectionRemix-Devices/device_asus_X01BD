@@ -489,3 +489,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
 $(call inherit-product, vendor/asus/X01BD/X01BD-vendor.mk)
+
+#RR OFFICIAL
+export RR_BUILDTYPE=Official

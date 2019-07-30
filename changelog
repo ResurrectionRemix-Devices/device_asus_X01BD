@@ -1,0 +1,75 @@
+2019-04-19
+Initial build
+
+ 2019-04-20
+Changed Kernel to Etherious Kernel
+Updated Vendor Security Patch Level to 2019-01-05
+Added Zen Parts
+Enabled touch optimizations
+Added Gcam & Removed Stock Cam
+
+
+ 2019-04-28
+Fixed Gcam not installed by default
+Added support for dirac
+Enabled Wi-Fi MAC randomization
+Enabled smart clock
+Improved padding on keyguard
+Fixed signal strength visual bug
+Enabled spectrum support
+Rewriten spectrum values
+Added MTweaks
+Address spectrum profiles denials
+Set NFC chip
+Improved padding on statusbar as well as lockscreen
+Uprev clang version to 9.0.2
+Make brightness ramp rates multiples of 60.
+Disable sched autogroup
+Set rlimit memlock to 64MB
+Use MIUI poweroff charging animation
+Enabled Boost Franework
+Fixed Charging LED
+Use Pixel 2 Xl Build Fingerprint
+
+
+ 2019-07-13
+Revised the sources to arrow team sources
+Below is the changelog of arrow source
+A lot of things are updated and reworked, things are much refined.
+Updated to latest pie blobs.
+Improved Camera and fixed GCAM on pie firmware and pie blobs.
+Removed jason/Mi Note 3's build fingerprint and desc to pass safetynet, and switched to asus's latest ones - fixed safetynet (remember to pass CTS, just normally install Magisk and it will pass - no need to use any hax or change build fingerprint).
+From this build minimal pie firmware based is forced to May Build, so you should atleast have that pie firmware base if you don't get it from
+
+
+ 2019-07-29
+All the changes are based on https://github.com/X01BD
+Add framework manifest
+Don't compile with Clang
+cleanup few blobs
+sepolicyAddress time_daemon denials
+Build separate system and vendor hidl lib
+manifestdownrev android.hardware.drm to 1.0
+m2pro_defconfig -> _defconfig
+Revert "uprev vendor.display.config to 1.2
+vendor_propremove unwanted prop
+Reduce media volume steps to 25
+Add missing vendor prefix to qcom-post-boot & power_off_alarm
+Update kernel path
+Remove time_daemon from init.target.rc
+Fixup audio config for source built audio
+enable AUDIO_FEATURE_ENABLED_KPI_OPTIMIZE
+Don't set specific kernel arch
+build few more audio packages
+remove prebuilt audio.primary.sdm660
+set TARGET_KERNEL_CLANG_COMPILE
+Add 2 more notification icons
+Enable Wi-Fi MAC randomization
+init.qcom/targetadd vendor prefix to services in vendor
+Move time_daemon from late_start to main
+add few display props from CAF
+update ims symlink
+ipacmFix memory leaks
+increase the maximum size for socket receive buffer
+overlayincrease the minimum brightness
+Update proprietary-files.txt to recent changes
